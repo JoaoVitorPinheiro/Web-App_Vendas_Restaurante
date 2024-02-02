@@ -1,0 +1,29 @@
+{
+  "name": "web-app_vendas_restaurante",
+  "version": "1.0.0",
+  "description": "Backend do site de restaurante",
+  "main": "Programacao/index.js",
+  "scripts": {
+    "start:dev": "nodemon /Programacao/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoVitorPinheiro/Web-App_Vendas_Restaurante.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoaoVitorPinheiro/Web-App_Vendas_Restaurante/issues"
+  },
+  "homepage": "https://github.com/JoaoVitorPinheiro/Web-App_Vendas_Restaurante#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.1",
+    "multer": "^1.4.5-lts.1"
+  }
+}
