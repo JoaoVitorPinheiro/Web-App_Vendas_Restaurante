@@ -1,21 +1,32 @@
 const express = require("express");
-const itemModel = require("../src/models/item.model");
-const path =require('path');
+const itemModel = require("./src/models/item.model");
+const path = require('path');
 const app = express()
 
 app.use(express.json())
 
-app.set("view engine", "ejs")
-app.set("views", "Programacao/src/views")
-
-app.use('/public', express.static('public'));
-
-app.get("/views/carrinho", async (req, res) => {
-    res.render("carrinho")
-})
+app.set('view engine', 'ejs');
+app.set('views', 'Programacao/src/views');
+app.use('/static', express.static(path.join(__dirname, 'public')))
 
 app.get("/views/home", async (req, res) => {
-    res.render("home")
+    res.render("home.ejs")
+})
+
+app.get("/views/carrinho", async (req, res) => {
+    res.render("carrinho.ejs")
+})
+
+app.get("/views/cardapio", async (req, res) => {
+    res.render("cardapio.ejs")
+})
+
+app.get("/views/sobremesas", async (req, res) => {
+    res.render("sobremesas.ejs")
+})
+
+app.get("/views/bebidas", async (req, res) => {
+    res.render("bebidas.ejs")
 })
 
 app.get("/api-main", async (req, res) => {

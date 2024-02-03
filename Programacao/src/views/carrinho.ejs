@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho</title>
-    <link rel="stylesheet" href="/Css/carrinho_css.css" type="text/css">
-    <link rel="stylesheet" href="/Css/nav_bar.css" type="text/css">
+    <link rel="stylesheet" href="/static/Css/carrinho_css.css" type="text/css">
+    <link rel="stylesheet" href="/static/Css/nav_bar.css" type="text/css">
 </head>
 <body>
       <div class="nav-bar">
         <header>
           <nav>
-            <a href="/" class="logo"><img src="img/Logo.png" alt="logo" /></a>
+            <a href="/views/home" class="logo"><img src="/static/img/Logo.png" alt="logo" /></a>
             <ul class="nav-list">
-              <li><a href="/Programacao/home.html">Home</a></li>
-              <li><a href="/Programacao/Pag_cardapio.html">Cardápio</a></li>
-              <li><a href="/Programacao/Pg_Sobremesa.html">Sobremesas</a></li>
-              <li><a href="/Programacao/bebidas_pag.html">Bebidas</a></li>
+              <li><a href="/views/home">Home</a></li>
+              <li><a href="/views/cardapio">Cardápio</a></li>
+              <li><a href="/views/sobremesas">Sobremesas</a></li>
+              <li><a href="/views/bebidas">Bebidas</a></li>
               <li>
-                <a href="/Programacao/carrinho.html"
+                <a href="/views/carrinho"
                   ><img
                     class="cart-icon"
-                    src="img/shopping-cart.png"
+                    src="/static/img/shopping-cart.png"
                     alt="carrinho icon"
                 /></a>
               </li>
@@ -45,13 +45,13 @@
                 <option value="mesa8">8</option>
               </select>
               </div>
-              <input class="fecharCompra" type="submit" value="Fazer Pedido" />
+              <input type="submit" value="Fazer Pedido" />
           </form>
 
           <div class="row">
             <div class="column">
               <div class="card">
-                <img src="img/coca.PNG" alt="refrigerante-cola">
+                <img src="/static/img/coca.PNG" alt="refrigerante-cola">
                 <p>1x</p>
                 <p>Refrigerante de cola</p>
                 <p>R$ 3,06</p>
@@ -59,7 +59,7 @@
             </div>
             <div class="column">
               <div class="card">
-                <img src="img/churros.PNG" alt="churros1">
+                <img src="/static/img/churros.PNG" alt="churros1">
                 <p>1x</p>
                 <p>Churros Doce de Leite</p>
                 <p>R$ 19,00</p>
@@ -73,7 +73,7 @@
                 <p id="p-total">Total:</p>
                 <p id="p-dinheiro">R$ 22,06</p>
               </div>
-          </div>
+            </div>
 
         </section>
       </main>
