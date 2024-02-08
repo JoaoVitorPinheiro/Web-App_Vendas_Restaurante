@@ -16,7 +16,7 @@ const itemSchema = new mongoose.Schema({
     itemImg: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "Img",
-        required: true,
+        required: false,
     }
 });
 
