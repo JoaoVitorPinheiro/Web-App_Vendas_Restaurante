@@ -96,3 +96,7 @@
     right: 100px;
     top: 20px;
 }
+
+.cart-product-image {
+    width: 40%;
+}

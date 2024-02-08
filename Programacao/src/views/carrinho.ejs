@@ -6,10 +6,13 @@
     <title>Carrinho</title>
     <link rel="stylesheet" href="/static/Css/carrinho_css.css" type="text/css">
     <link rel="stylesheet" href="/static/Css/nav_bar.css" type="text/css">
-</head>
-<body>
-      <div class="nav-bar">
-        <header>
+    <script src="/static/scriptCarrinho.js" defer></script>
+    <script src="/static/scriptPegaCarrinho.js"></script>
+    <script type="module" src="/static/dist/bundle.js"></script>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <header>
           <nav>
             <a href="/views/home" class="logo"><img src="/static/img/Logo.png" alt="logo" /></a>
             <ul class="nav-list">
@@ -47,26 +50,21 @@
               </div>
               <input type="submit" value="Fazer Pedido" />
           </form>
-
-          <div class="row">
-            <div class="column">
-              <div class="card">
-                <img src="/static/img/coca.PNG" alt="refrigerante-cola">
-                <p>1x</p>
-                <p>Refrigerante de cola</p>
-                <p>R$ 3,06</p>
-              </div>
-            </div>
-            <div class="column">
-              <div class="card">
-                <img src="/static/img/churros.PNG" alt="churros1">
-                <p>1x</p>
-                <p>Churros Doce de Leite</p>
-                <p>R$ 19,00</p>
-              </div>
-            </div>
-          </div>
           
+          <table id="cart-table">
+            <thead>
+              <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+              </tr>
+            </thead>
+            <tbody class="cart-body">
+              
+              
+            </tbody>
+          </table>
+
           <div class="row2">
             <div class="column2">
               <div class="card2">
