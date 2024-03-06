@@ -1,6 +1,5 @@
 const diminuirBotoes = document.querySelectorAll('.diminuir');
 const aumentarBotoes = document.querySelectorAll('.aumentar');
-const inputQuantidades = document.querySelectorAll('.input--personalizado');
 
 
 function atualizarQuantidade(botaoClicado) {

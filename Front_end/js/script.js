@@ -12,7 +12,7 @@ tabs.forEach(function (tab) {
         id = tab.getAttribute('data-id');
         contents.forEach(function (box) {
             box.classList.add('hide');
-            if (box.getAttribute('data-content') == id){
+            if (box.getAttribute('data-content') === id){
                 box.classList.remove('hide');
                 box.classList.add('show');
             }

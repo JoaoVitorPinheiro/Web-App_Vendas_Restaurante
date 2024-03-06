@@ -1,6 +1,6 @@
 const navbar = document.querySelector('.nav-bar')
 
-let header = document.createElement('nav')
+const header = document.createElement('nav')
 
 header.innerHTML = `
         <a href="/Programacao/home.html" class="logo"> <img src="img/Logo.png" alt="logo" /></a>
