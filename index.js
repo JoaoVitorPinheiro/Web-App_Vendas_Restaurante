@@ -2,21 +2,14 @@
 const express = require("express");
 const app= express();
 const port=3000
+const routeCardapio=require("./src/routes/route_pag_cardapio")
 
-
-app.get("/",(req,res)=>{
-    res.send("<h1>olá</h1>")
-})
-
-
+// a rota da pagina você coloca aqui em /cardapio para mostrar já no route_pag_cardapio só coloca /
+app.use("/cardapio", routeCardapio);
 
 
 
-
-app.listen(port,(error)=>{
-    if(error){
-        console.log("servidor não iniciado ",error);
-    }else{
-        console.log(`servidor iniciado com suceeso na porta${port}`);
-    }
-})
+app.listen(port, (error) => {
+    const statusMessage = error ? `Servidor não iniciado: ${error}` :`Servidor iniciado com sucesso na porta ${port}`;
+    console.log(statusMessage);
+});
