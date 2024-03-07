@@ -1,4 +1,4 @@
-class ControleDosExperimentos{
+class ControleDosBurrito{
     index(req, res) {
        
     }
@@ -18,11 +18,6 @@ class ControleDosExperimentos{
     delete(req, res) {
         // Lógica para excluir um taco
     }
-
-
-
-
-    
 }
 
-module.exports=new ControleDosExperimentos();
+module.exports=new ControleDosBurrito();

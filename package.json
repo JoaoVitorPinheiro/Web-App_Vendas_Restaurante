@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon ../scr/index.js",
-    "start": "node ../scr/index.js",
+    "start:dev": "nodemon ../scr/server.js",
+    "start": "node ../scr/server.js",
     "lint": "eslint ./scr/js"
   },
   "keywords": [],

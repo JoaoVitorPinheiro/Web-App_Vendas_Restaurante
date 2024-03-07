@@ -2,7 +2,7 @@
 
 class ControleDosTacos {
     index(req, res) {
-        res.send("<h1>olá</h1>")
+       
     }
 
     show(req, res) {
