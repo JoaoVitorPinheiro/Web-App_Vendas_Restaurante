@@ -5,14 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon ./scr/index.js",
-    "start": "node ./scr/index.js"
+    "start:dev": "nodemon ../scr/index.js",
+    "start": "node ../scr/index.js",
+    "lint": "eslint ./scr/js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.3"
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "mongoose": "^8.2.1"
   },
   "devdependencies": {
     "nodemon": "^3.1.0",
