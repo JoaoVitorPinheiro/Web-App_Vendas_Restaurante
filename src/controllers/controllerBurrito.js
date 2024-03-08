@@ -1,21 +1,21 @@
 class ControleDosBurrito{
-    index(req, res) {
+    async index(req, res) {
        
     }
 
-    show(req, res) {
+    async show(req, res) {
         // Lógica para mostrar um taco específico
     }
 
-    store(req, res) {
+    async store(req, res) {
         // Lógica para adicionar um novo taco
     }
 
-    update(req, res) {
+    async update(req, res) {
         // Lógica para atualizar um taco existente
     }
 
-    delete(req, res) {
+    async delete(req, res) {
         // Lógica para excluir um taco
     }
 }

@@ -7,9 +7,8 @@ const router=express.Router()
 
 // aqui é para colocar as rotas todas tem que ser "/"
 
-router.get("/",ControleDosTacos.index);
-router.get("/",ControleDosBurrito.index);
-router.get("/",ControleDosExperimentos.index);
+router.post("/",ControleDosTacos.store);
+
 
 
 
